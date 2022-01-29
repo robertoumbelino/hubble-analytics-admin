@@ -63,7 +63,7 @@ const Register = props => {
               <div className="auth-info my-2">
                 <p>
                   Hubble Analytics é um projeto de métricas do time de
-                  desenvolvimento da da <b>FW7</b>.
+                  desenvolvimento da <b>FW7</b>.
                 </p>
               </div>
               <form onSubmit={event => doRegister(event)}>
