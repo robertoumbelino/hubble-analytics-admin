@@ -118,7 +118,7 @@ const Header = props => {
           >
             <DropdownItem>
               <img src={basketIcon} alt="Basket Icon" />
-              <span>12 new orders have arrived today</span>
+              <span>novo Challenge lançado</span>
             </DropdownItem>
             <DropdownItem>
               <div>
@@ -126,7 +126,7 @@ const Header = props => {
                   <img src={mariaImage} alt="Maria" className={s.mariaImage} />
                   <div className="d-flex flex-column">
                     <p className="body-3">Maria</p>
-                    <p className="label muted">15 min ago</p>
+                    <p className="label muted">15 min atrás</p>
                   </div>
                 </div>
                 <img
@@ -135,17 +135,17 @@ const Header = props => {
                   className={s.notificationImage}
                 />
                 <p className="body-2 muted">
-                  It is just a simple image that can define th..
+                  acabou de finalizar uma atividade
                 </p>
               </div>
             </DropdownItem>
             <DropdownItem>
               <img src={calendarIcon} alt="Calendar Icon" />
-              <span>1 event has been canceled and ...</span>
+              <span>aniversário do Pedro</span>
             </DropdownItem>
             <DropdownItem>
               <img src={envelopeIcon} alt="Envelope Icon" />
-              <span>you have 2 new messages</span>
+              <span>você recebeu 2 novas mensagens</span>
             </DropdownItem>
           </DropdownMenu>
         </Dropdown>

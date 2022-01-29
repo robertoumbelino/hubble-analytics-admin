@@ -54,7 +54,7 @@ const Register = props => {
           <Col xs={12} lg={6} className="left-column">
             <Widget className="widget-auth widget-p-lg">
               <div className="d-flex align-items-center justify-content-between py-3">
-                <p className="auth-header mb-0">Sign Up</p>
+                <p className="auth-header mb-0">Cadastrar</p>
                 <div className="logo-block">
                   <HubbleLogo />
                   <p className="mb-0">Hubble</p>
