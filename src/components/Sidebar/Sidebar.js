@@ -49,7 +49,7 @@ const Sidebar = props => {
             props.dispatch(changeActiveSidebarItem(activeItem))
           }
           activeItem={props.activeItem}
-          header="Typography"
+          header="Challenges"
           isHeader
           iconName={<i className={'eva eva-text-outline'} />}
           link="/template/typography"
@@ -60,7 +60,7 @@ const Sidebar = props => {
             props.dispatch(changeActiveSidebarItem(activeItem))
           }
           activeItem={props.activeItem}
-          header="Tables"
+          header="Sprints"
           isHeader
           iconName={<i className={'eva eva-grid-outline'} />}
           link="/template/tables"
@@ -71,7 +71,7 @@ const Sidebar = props => {
             props.dispatch(changeActiveSidebarItem(activeItem))
           }
           activeItem={props.activeItem}
-          header="Notifications"
+          header="Notificações"
           isHeader
           iconName={<i className={'eva eva-bell-outline'} />}
           link="/template/notifications"
@@ -82,7 +82,7 @@ const Sidebar = props => {
             props.dispatch(changeActiveSidebarItem(activeItem))
           }
           activeItem={props.activeItem}
-          header="UI Elements"
+          header="Insights"
           isHeader
           iconName={<i className={'eva eva-cube-outline'} />}
           link="/template/uielements"
