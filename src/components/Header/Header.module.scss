@@ -1,7 +1,6 @@
-@import "../../styles/helpers";
+@import '../../styles/helpers';
 
 .root {
-
   :global {
     .input-group {
       overflow: hidden;
@@ -22,7 +21,7 @@
       background-color: $white;
       height: 45px;
       border: none;
-      border-radius: .5rem;
+      border-radius: 0.5rem;
       padding-left: 1rem;
       font-size: $font-size-base;
     }
@@ -56,7 +55,7 @@
   border-radius: 50%;
 
   img {
-    height: 100%
+    height: 100%;
   }
 }
 
@@ -101,4 +100,3 @@
     }
   }
 }
-

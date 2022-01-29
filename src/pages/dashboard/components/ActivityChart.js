@@ -1,28 +1,30 @@
-import React from "react";
-import ApexCharts from "react-apexcharts";
+import React from 'react'
+import ApexCharts from 'react-apexcharts'
 
-const series = [{
-  name: 'Your Activity',
-  type: 'column',
-  data: [350, 275, 375, 375, 300, 225, 275]
-}, {
-  name: 'Your Goal',
-  type: 'line',
-  data: [400, 350, 450, 400, 350, 300, 350]
-
-}];
+const series = [
+  {
+    name: 'Atividades realizadas',
+    type: 'column',
+    data: [28, 29, 24, 25, 33, 29, 23]
+  },
+  {
+    name: 'Meta de atividades',
+    type: 'line',
+    data: [30, 26, 28, 32, 37, 24, 28]
+  }
+]
 
 const chartSettings = {
-  colors: ["#FFCA41", "#43BC13"],
+  colors: ['#FFCA41', '#43BC13'],
   chart: {
     height: 350,
     type: 'line',
     toolbar: {
-      show: false,
-    },
+      show: false
+    }
   },
   stroke: {
-    curve: "straight",
+    curve: 'straight',
     width: [0, 1]
   },
   dataLabels: {
@@ -30,16 +32,16 @@ const chartSettings = {
     enabledOnSeries: [1],
     style: {
       fontSize: '10px',
-      fontWeight: 500,
+      fontWeight: 500
     },
     background: {
-      borderWidth: 0,
-    },
+      borderWidth: 0
+    }
   },
-  labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+  labels: ['01-02', '03-04', '05-06', '07-08', '09-10', '11-12', '12-13'],
   legend: {
-    position: "top",
-    floating: true,
+    position: 'top',
+    floating: true
   },
   xaxis: {
     type: 'category',
@@ -52,26 +54,26 @@ const chartSettings = {
     labels: {
       show: true,
       style: {
-        colors: "#6B859E",
-      },
-    },
+        colors: '#6B859E'
+      }
+    }
   },
   yaxis: {
-    show: false,
+    show: false
   },
   fill: {
-    type: "solid",
-    opacity: 1,
+    type: 'solid',
+    opacity: 1
   },
   plotOptions: {
     bar: {
-      borderRadius: 10,
+      borderRadius: 10
     }
   },
   grid: {
-    show: false,
+    show: false
   }
-};
+}
 
 export default function ApexActivityChart() {
   return (
