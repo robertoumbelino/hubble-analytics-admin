@@ -170,15 +170,15 @@ const Header = props => {
           >
             <DropdownItem className={s.dropdownProfileItem}>
               <ProfileIcon />
-              <span>Profile</span>
+              <span>Perfil</span>
             </DropdownItem>
             <DropdownItem className={s.dropdownProfileItem}>
               <TasksIcon />
-              <span>Tasks</span>
+              <span>Atividades</span>
             </DropdownItem>
             <DropdownItem className={s.dropdownProfileItem}>
               <MessagesIcon />
-              <span>Messages</span>
+              <span>Mensagens</span>
             </DropdownItem>
             <NavItem>
               <NavLink onClick={() => doLogout()} href="#">
@@ -187,7 +187,7 @@ const Header = props => {
                   type="submit"
                 >
                   <img src={logoutIcon} alt="Logout" />
-                  <span className="ml-1">Logout</span>
+                  <span className="ml-1">Sair</span>
                 </button>
               </NavLink>
             </NavItem>
