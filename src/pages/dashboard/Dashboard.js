@@ -13,6 +13,8 @@ import {
 import Widget from '../../components/Widget/Widget.js'
 import ApexActivityChart from './components/ActivityChart.js'
 
+import clock from '../../assets/dashboard/clock.svg'
+import calendar from '../../assets/dashboard/calendar.svg'
 import meal1 from '../../assets/dashboard/meal-1.svg'
 import meal2 from '../../assets/dashboard/meal-2.svg'
 import meal3 from '../../assets/dashboard/meal-3.svg'
@@ -99,6 +101,71 @@ const Dashboard = () => {
               </Widget>
             </Col>
           </Row>
+
+          <Row className="gutter mb-4">
+            <Col xs={12} md={12}>
+              <Widget className="widget-p-md">
+                <div className="d-flex justify-content-between">
+                  <div className="headline-3 d-flex align-items-center">
+                    Tempo de desenvolvimento
+                  </div>
+                  <UncontrolledDropdown>
+                    <DropdownToggle caret>
+                      &nbsp; Média total &nbsp;
+                    </DropdownToggle>
+                    <DropdownMenu>
+                      <DropdownItem>Média total</DropdownItem>
+                      <DropdownItem>Ano passado</DropdownItem>
+                      <DropdownItem>Ano retrasado</DropdownItem>
+                    </DropdownMenu>
+                  </UncontrolledDropdown>
+                </div>
+
+                <div key={uuidv4()} className={`mt-4 ${s.widgetBlock}`}>
+                  <div className={s.widgetBody}>
+                    <div className="d-flex">
+                      <img
+                        className="img-fluid mr-2"
+                        width={42}
+                        height={42}
+                        src={clock}
+                        alt="..."
+                      />
+                      <div className="d-flex flex-column">
+                        <p className="body-2">Cycle time</p>
+                        <p className="body-3 muted">1 dia e 5 horas</p>
+                      </div>
+                    </div>
+                    <div className="body-3 muted">
+                      Tempo do <b>Doing</b> até o <b>Done</b>
+                    </div>
+                  </div>
+                </div>
+
+                <div key={uuidv4()} className={`mt-4 ${s.widgetBlock}`}>
+                  <div className={s.widgetBody}>
+                    <div className="d-flex">
+                      <img
+                        className="img-fluid mr-2"
+                        width={42}
+                        height={42}
+                        src={calendar}
+                        alt="..."
+                      />
+                      <div className="d-flex flex-column">
+                        <p className="body-2">Lead time</p>
+                        <p className="body-3 muted">2 dia e 3 horas</p>
+                      </div>
+                    </div>
+                    <div className="body-3 muted">
+                      Tempo do <b>Todo</b> até o <b>Production</b>
+                    </div>
+                  </div>
+                </div>
+              </Widget>
+            </Col>
+          </Row>
+
           <Row className="gutter mb-4">
             <Col xs={12}>
               <Widget className="widget-p-none">
