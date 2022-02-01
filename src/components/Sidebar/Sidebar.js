@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
-import { Button } from 'reactstrap'
 import { withRouter } from 'react-router-dom'
 import s from './Sidebar.module.scss'
 import LinksGroup from './LinksGroup/LinksGroup.js'
@@ -10,8 +9,6 @@ import HubbleLogo from '../Icons/HubbleLogo.js'
 import cn from 'classnames'
 
 const Sidebar = props => {
-  const { activeItem = '', ...restProps } = props
-
   const [burgerSidebarOpen, setBurgerSidebarOpen] = useState(false)
 
   useEffect(() => {
